@@ -10,7 +10,18 @@ func main() {
 }
 
 func testB() {
-
+	var(
+	    exito bool = false
+	    clave string = "12345"
+	)
+	
+	if clave = "12345" {
+	   exito = true  
+	}
+	if exito == true {
+	   var operacion uint32 = 30%10 
+	} 
+	
 }
 
 func testA() {
