@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	testA()
+	testB()
+}
+
+func testB() {
+
 }
 
 func testA() {
@@ -18,7 +25,19 @@ func testA() {
 	numero_flotante := float64(123.8)
 	var nulo string = ""
 	var x, y, z bool // false false false
-	fmt.Printf("Dato: %d \n", dato)
+	//Declaracion multiple
+	var (
+		nombre, apellido string = "Juan", "Perez"
+		exito, fracaso   bool   = true, false
+		letras           string = `Alef
+		Bet
+		Guimmel
+		Dalet
+		He`
+		numx, numy uint32 = 34, 54
+	)
+
+	fmt.Printf("Dato %d \n", dato)
 	fmt.Printf("Entero %d \n", entero)
 	fmt.Printf("Caracter %c \n", caracter)
 	fmt.Printf("Double %f \n", real)
@@ -28,4 +47,8 @@ func testA() {
 	fmt.Printf("Constante %d \n", TAM)
 	fmt.Println("Cadena ", nulo)
 	fmt.Println("Booleanos ", x, y, z)
+	fmt.Printf("%s %s\n", nombre, apellido)
+	fmt.Printf("%t %t\n", exito, fracaso)
+	fmt.Printf("Letras %s\n", letras)
+	fmt.Printf("Enteros %d %d \n", numx, numy)
 }
