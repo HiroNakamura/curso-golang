@@ -5,5 +5,15 @@
 **Go** es un lenguaje de programación de código abierto que facilita la creación de software simple, confiable y eficiente.
 
 
+Compilamos:
+```java
+$ go build programa.go
+```
+
+Ejecutamos:
+```java
+$ programa.exe
+```
+
 Links:
 * [Sitio oficial de Golang](https://golang.org/)
