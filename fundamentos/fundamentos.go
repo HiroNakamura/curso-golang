@@ -13,15 +13,56 @@ func testB() {
 	var(
 	    exito bool = false
 	    clave string = "12345"
+	    opcion int32 = 1
+	    edad int16 = 17
+	    operacion bool
 	)
 	
-	if clave = "12345" {
+	if clave == "12345" {
 	   exito = true  
 	}
 	if exito == true {
 	   var operacion uint32 = 30%10 
+	   fmt.Println("Operacion: ",operacion)
+	   if operacion == 0 {
+	   	fmt.Println("Verdadero")
+	   }
 	} 
-	
+
+	switch opcion{
+	case 0:
+		fmt.Println("1")
+	case 1:
+		fmt.Println("2")
+	default:
+		fmt.Println("3")
+	}
+
+	if edad == 18 {
+		fmt.Println("Puedes votar")
+	}
+
+	if edad <= 17 {
+		fmt.Println("Aun no puedes votar")	
+	}
+
+	if clave == "090909" {
+		fmt.Println("Son identicas")
+	} else {
+		fmt.Println("No son identicas")
+	}
+
+	operacion = (34 > 11 ) && (55 == 0) //false
+	fmt.Printf("%t\n",operacion)
+	operacion = (34 > 11 ) && (55 == 55) //true
+	fmt.Printf("%t\n",operacion)
+	operacion = (34 < 11 ) || (55 > 0) //true
+	fmt.Printf("%t\n",operacion) 
+	operacion = !(34 < 11 ) && !(55 < 0) //true
+	fmt.Printf("%t\n",operacion) 
+	operacion = !(true) //false
+	fmt.Printf("%t\n",operacion) 
+
 }
 
 func testA() {
