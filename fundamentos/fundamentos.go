@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/HiroNakamura/curso-golang/blob/master/fundamentos/funciones"
 )
 
 func main() {
@@ -11,6 +12,13 @@ func main() {
 	testD()
 	testE()
 	testF()
+	testG()
+}
+
+func testG(){
+	fmt.Println("*** Usando funciones ***")
+	longitud := funciones.obtenerTam("ABC")
+	fmt.Println("Longitud: ",longitud)
 }
 
 func testF() {
