@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/rand"
 )
 
 func suma(x, y int) int {
@@ -27,6 +28,11 @@ func division(x, y int) int {
 func main() {
 	testA()
 	testB()
+}
+
+func testC() {
+	fmt.Println("*** Importando funciones ***")
+
 }
 
 func testB() {
@@ -68,6 +74,18 @@ func testB() {
 	numeroPI := math.Pi
 	fmt.Println("PI: ", PI)
 	fmt.Println("math.Pi: ", numeroPI)
+
+	valor := 100
+	for valor < TAM {
+		fmt.Printf("Raiz de %d es %f\n", valor, math.Sqrt(float64(valor)))
+		valor++
+	}
+
+	aleatorio := rand.Intn(2)
+	fmt.Printf("Aleatorio: %d\n", aleatorio)
+	_aleatorio := rand.Int
+	fmt.Printf("Aleatorio: %d\n", _aleatorio)
+
 }
 
 func testA() {
