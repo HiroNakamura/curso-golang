@@ -8,43 +8,59 @@ func main() {
 	testA()
 	testB()
 	testC()
+	testD()
 }
 
-func testC(){
-	var(
+func testD() {
+	fmt.Println("***Ciclo for***")
+	const MAX = 100
+	for i := 0; i < MAX; i++ {
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Printf("%d\n", i)
+		}
+	}
+}
+
+func testC() {
+	fmt.Println("*** Ciclo 'while' ***")
+	var (
 		contador, suma int32 = 0, 0
 	)
 
 	const TAM = 100
 
 	for contador < TAM {
-		fmt.Printf("%d : %d\n",suma, contador)
+		fmt.Printf("%d : %d\n", suma, contador)
+		suma += contador
 		contador++
+		if suma >= 1000 {
+			break
+		}
 	}
-	fmt.Printf("Suma: %d\n",suma)
+	fmt.Printf("Suma: %d\n", suma)
 }
 
 func testB() {
-	var(
-	    exito bool = false
-	    clave string = "12345"
-	    opcion int32 = 1
-	    edad int16 = 17
-	    operacion bool
+	var (
+		exito     bool   = false
+		clave     string = "12345"
+		opcion    int32  = 1
+		edad      int16  = 17
+		operacion bool
 	)
-	
+
 	if clave == "12345" {
-	   exito = true  
+		exito = true
 	}
 	if exito == true {
-	   var operacion uint32 = 30%10 
-	   fmt.Println("Operacion: ",operacion)
-	   if operacion == 0 {
-	   	fmt.Println("Verdadero")
-	   }
-	} 
+		var operacion uint32 = 30 % 10
+		fmt.Println("Operacion: ", operacion)
+		if operacion == 0 {
+			fmt.Println("Verdadero")
+		}
+	}
 
-	switch opcion{
+	switch opcion {
 	case 0:
 		fmt.Println("1")
 	case 1:
@@ -58,7 +74,7 @@ func testB() {
 	}
 
 	if edad <= 17 {
-		fmt.Println("Aun no puedes votar")	
+		fmt.Println("Aun no puedes votar")
 	}
 
 	if clave == "090909" {
@@ -67,16 +83,16 @@ func testB() {
 		fmt.Println("No son identicas")
 	}
 
-	operacion = (34 > 11 ) && (55 == 0) //false
-	fmt.Printf("%t\n",operacion)
-	operacion = (34 > 11 ) && (55 == 55) //true
-	fmt.Printf("%t\n",operacion)
-	operacion = (34 < 11 ) || (55 > 0) //true
-	fmt.Printf("%t\n",operacion) 
-	operacion = !(34 < 11 ) && !(55 < 0) //true
-	fmt.Printf("%t\n",operacion) 
+	operacion = (34 > 11) && (55 == 0) //false
+	fmt.Printf("%t\n", operacion)
+	operacion = (34 > 11) && (55 == 55) //true
+	fmt.Printf("%t\n", operacion)
+	operacion = (34 < 11) || (55 > 0) //true
+	fmt.Printf("%t\n", operacion)
+	operacion = !(34 < 11) && !(55 < 0) //true
+	fmt.Printf("%t\n", operacion)
 	operacion = !(true) //false
-	fmt.Printf("%t\n",operacion) 
+	fmt.Printf("%t\n", operacion)
 
 }
 

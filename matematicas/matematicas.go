@@ -62,7 +62,8 @@ func testB() {
 	fmt.Println("Sqrt: ", operacion)
 	operacion = math.Mod(x, math.Abs(y))
 	fmt.Println("Mod: ", operacion)
-
+	operacion = math.Pow(y, x)
+	fmt.Println("Pow: ", operacion)
 }
 
 func testA() {
