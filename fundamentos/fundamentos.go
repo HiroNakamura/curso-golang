@@ -9,6 +9,82 @@ func main() {
 	testB()
 	testC()
 	testD()
+	testE()
+	testF()
+}
+
+func testF() {
+	fmt.Println("*** Uso de if y switch ***")
+	var (
+		ciudad    string = "Cosmopolita"
+		numero    uint32 = 3
+		verdadero bool   = false
+	)
+
+	if ciudad == "Cosmolina" {
+		fmt.Println("La ciudad de la Pascalina.")
+	} else if ciudad == "Petrarca" {
+		fmt.Println("La ciudad de las ruinas eternas.")
+	} else {
+		fmt.Println("Bienvenido a Cosmopolita, la ciudad de las ideas.")
+	}
+
+	switch numero {
+	case 0:
+		verdadero = !true
+	case 1:
+		verdadero = 89 > 120
+	case 3:
+		verdadero = 33 > 11
+	default:
+		verdadero = 65 > 11 && 67 == 66
+	}
+
+	contador := 0
+	if verdadero {
+		for contador < 100 {
+			contador++
+			if contador%3 == 0 {
+				break
+			}
+			fmt.Println("Contador: ", contador)
+		}
+	}
+	fmt.Println("Contador: ", contador)
+}
+
+func testE() {
+	fmt.Println("*** Ciclo for range ***")
+	texto := "Una odisea llamada vida. Una historia verdadera."
+	for indice, letra := range texto {
+		fmt.Printf("Texto[%d] = %+v - %s\r\n", indice, letra, string(letra))
+	}
+
+	var (
+		existe, verdadero bool  = true, true
+		contador          int32 = 0
+	)
+
+	if verdadero {
+		for existe {
+			contador++
+			if contador%5 == 0 {
+				existe, verdadero = false, false
+			}
+			fmt.Println("Contador: ", contador)
+		}
+	}
+
+	for {
+		contador--
+		fmt.Println("Contador: ", contador)
+		if contador == 0 {
+			break
+		}
+	}
+
+	fmt.Println("Contador: ", contador)
+
 }
 
 func testD() {

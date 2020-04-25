@@ -64,6 +64,10 @@ func testB() {
 	fmt.Println("Mod: ", operacion)
 	operacion = math.Pow(y, x)
 	fmt.Println("Pow: ", operacion)
+	const PI = 3.141516
+	numeroPI := math.Pi
+	fmt.Println("PI: ", PI)
+	fmt.Println("math.Pi: ", numeroPI)
 }
 
 func testA() {
