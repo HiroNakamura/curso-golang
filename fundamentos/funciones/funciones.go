@@ -1,5 +1,5 @@
 package funciones
 
-func obtenerTam(cadena string) int{
-   return len(cadena)
+func Tamanyo(cadena string) int {
+	return len(cadena)
 }

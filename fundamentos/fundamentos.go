@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/HiroNakamura/curso-golang/blob/master/fundamentos/funciones"
+	"funciones"
 )
 
 func main() {
@@ -15,10 +15,10 @@ func main() {
 	testG()
 }
 
-func testG(){
+func testG() {
 	fmt.Println("*** Usando funciones ***")
-	longitud := funciones.obtenerTam("ABC")
-	fmt.Println("Longitud: ",longitud)
+	longitud := funciones.Tamanyo("ABC")
+	fmt.Println("Longitud: ", longitud)
 }
 
 func testF() {
