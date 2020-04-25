@@ -6,17 +6,32 @@
 
 ## Temario
 
-1. Fundamentos.
-2. Matemáticas con Golang.
+* [Fundamentos.](https://github.com/HiroNakamura/curso-golang/tree/master/fundamentos)
+* [Matemáticas con Golang.](https://github.com/HiroNakamura/curso-golang/tree/master/matematicas)
+
+
+
+**Hola.go**
+```java
+package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("Aprendiendo a programar con Golang")
+}
+
+```
+
 
 
 Compilamos:
-```java
+```bash
 $ go build programa.go
 ```
 
 Ejecutamos:
-```java
+```bash
 $ programa.exe
 ```
 
