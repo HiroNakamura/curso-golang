@@ -7,6 +7,21 @@ import (
 func main() {
 	testA()
 	testB()
+	testC()
+}
+
+func testC(){
+	var(
+		contador, suma int32 = 0, 0
+	)
+
+	const TAM = 100
+
+	for contador < TAM {
+		fmt.Printf("%d : %d\n",suma, contador)
+		contador++
+	}
+	fmt.Printf("Suma: %d\n",suma)
 }
 
 func testB() {
