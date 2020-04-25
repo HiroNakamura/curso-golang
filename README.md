@@ -4,6 +4,11 @@
 
 **Go** es un lenguaje de programación de código abierto que facilita la creación de software simple, confiable y eficiente.
 
+## Temario
+
+1. Fundamentos.
+2. Matemáticas con Golang.
+
 
 Compilamos:
 ```java
