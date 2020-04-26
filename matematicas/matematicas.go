@@ -1,6 +1,7 @@
 package main
 
 import (
+	"economica"
 	"fmt"
 	"math"
 	"math/rand"
@@ -32,7 +33,7 @@ func main() {
 
 func testC() {
 	fmt.Println("*** Importando funciones ***")
-
+	economica.Nada()
 }
 
 func testB() {

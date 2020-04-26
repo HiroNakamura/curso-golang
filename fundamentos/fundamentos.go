@@ -133,6 +133,18 @@ func testD() {
 			fmt.Printf("%d\n", i)
 		}
 	}
+
+	fmt.Print("\n")
+	numero := 0
+	for {
+		fmt.Println("Continuo")
+		fmt.Println("Ingresar un numero:")
+		fmt.Scanln(&numero)
+		if numero == 100 {
+			break
+		}
+	}
+
 }
 
 func testC() {
