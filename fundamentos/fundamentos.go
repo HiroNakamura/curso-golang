@@ -23,7 +23,7 @@ var entero2 int32
 var descripcion string
 
 func testH() {
-	fmt.Println("*** Introduciendo valores con Scanln, os y bufio ***")
+	funciones.Imprime("*** Introduciendo valores con Scanln, os y bufio ***")
 	fmt.Println("Introduce un numero 1: ")
 	fmt.Scanln(&entero1)
 	fmt.Println("Introduce un numero 2: ")

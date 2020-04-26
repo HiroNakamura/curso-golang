@@ -1,5 +1,7 @@
 package funciones
 
+import "fmt"
+
 func Tamanyo(cadena string) int {
 	return len(cadena)
 }
@@ -16,4 +18,8 @@ func Mayor(x, y int32) bool {
 		return true
 	}
 	return false
+}
+
+func Imprime(msg string) {
+	fmt.Printf("%s\n")
 }
