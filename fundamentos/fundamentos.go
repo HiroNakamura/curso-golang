@@ -17,8 +17,11 @@ func main() {
 
 func testG() {
 	fmt.Println("*** Usando funciones ***")
-	longitud := funciones.Tamanyo("ABC")
+	longitud := funciones.Tamanyo("GIMMEL-BETH-ALEF")
 	fmt.Println("Longitud: ", longitud)
+	var a, b float32 = 4.7, 6.3
+	fmt.Printf("Division de %f y %f es %f\n", a, b, funciones.Division(a, b))
+
 }
 
 func testF() {
