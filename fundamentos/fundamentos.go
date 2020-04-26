@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"funciones"
+	"os"
 )
 
 func main() {
@@ -13,15 +15,40 @@ func main() {
 	testE()
 	testF()
 	testG()
+	testH()
+}
+
+var entero1 int32
+var entero2 int32
+var descripcion string
+
+func testH() {
+	fmt.Println("*** Introduciendo valores con Scanln, os y bufio ***")
+	fmt.Println("Introduce un numero 1: ")
+	fmt.Scanln(&entero1)
+	fmt.Println("Introduce un numero 2: ")
+	fmt.Scanln(&entero2)
+	if funciones.Mayor(entero1, entero2) == true {
+		fmt.Printf("%d es mayor a %d\n", entero1, entero2)
+	}
+	fmt.Println("Descripcion:")
+	teclado := bufio.NewScanner(os.Stdin)
+	if teclado.Scan() {
+		descripcion = teclado.Text()
+	}
+	fmt.Printf("%s : %f \n", descripcion, funciones.Division(float32(entero1), float32(entero2)))
 }
 
 func testG() {
-	fmt.Println("*** Usando funciones ***")
+	fmt.Println("*** Usando funciones de usuario ***")
 	longitud := funciones.Tamanyo("GIMMEL-BETH-ALEF")
 	fmt.Println("Longitud: ", longitud)
 	var a, b float32 = 4.7, 6.3
 	fmt.Printf("Division de %f y %f es %f\n", a, b, funciones.Division(a, b))
-
+	var x, y int32 = 39, 5
+	if funciones.Mayor(x, y) == true {
+		fmt.Printf("%d es mayor a %d :%t\n", x, y, funciones.Mayor(x, y))
+	}
 }
 
 func testF() {
