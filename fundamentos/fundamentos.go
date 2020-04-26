@@ -144,6 +144,31 @@ func testD() {
 			break
 		}
 	}
+	fmt.Print("Iniciamos un bucle\n")
+	var i = 0
+	for i < 10 {
+		fmt.Printf("Valor de %d\n", i)
+		if i == 5 {
+			fmt.Printf("Multiplicamos por 2 : %d\n", i)
+			i *= 2
+			continue
+		}
+		fmt.Printf("Pasó por aqui\n")
+		i++
+	}
+	fmt.Print("\nIniciamos otro bucle\n")
+
+	var cont int = 0
+BUCLE:
+	for cont < 10 {
+		if cont == 4 {
+			cont = cont + 2
+			fmt.Println("Vamos a la rutina BUCLE")
+			goto BUCLE
+		}
+		fmt.Printf("Valor de %d \n", cont)
+		cont++
+	}
 
 }
 
