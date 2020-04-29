@@ -49,6 +49,28 @@ func testG() {
 	if funciones.Mayor(x, y) == true {
 		fmt.Printf("%d es mayor a %d :%t\n", x, y, funciones.Mayor(x, y))
 	}
+	var numeroy int32 = 43
+	var numerox int32 = 54
+	fmt.Printf("x: %d , y: %d: \n", numerox, numeroy)
+	var doble, triple int32 = funciones.Doble_Triple(numerox)
+	fmt.Printf("Doble de %d es %d\n", numerox, doble)
+	fmt.Printf("Triple de %d es %d\n", numerox, triple)
+	fmt.Printf("Doble de %d es %d\n", numeroy, doble)
+	fmt.Printf("Triple de %d es %d\n", numeroy, triple)
+
+	var calculo1, calculo2 float64 = funciones.Operacion(float64(numerox), float64(numeroy))
+	fmt.Printf("Calculo 1: %f\n", calculo1)
+	fmt.Printf("Calculo 2: %f\n", calculo2)
+
+	entero, booleano := funciones.OperacionTwo(4)
+	fmt.Printf("Entero: %d\n", entero)
+	fmt.Printf("Booleano: %t\n", booleano)
+
+	calculando := funciones.Calculando(1, 2, 3, 3, 3)
+	fmt.Printf("Resultado: %d\n", calculando)
+	calculandoTwo := funciones.Calculando(0, 5, 6, 4, 22, 1, 3, 4, 4, 5)
+	fmt.Printf("Resultado: %d\n", calculandoTwo)
+
 }
 
 func testF() {
