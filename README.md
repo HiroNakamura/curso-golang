@@ -8,7 +8,7 @@
 
 * [Fundamentos.](https://github.com/HiroNakamura/curso-golang/tree/master/fundamentos)
 * [Matemáticas con Golang.](https://github.com/HiroNakamura/curso-golang/tree/master/matematicas)
-
+* [Cadenas.](https://github.com/HiroNakamura/curso-golang/tree/master/cadenas)
 
 
 **Hola.go**
