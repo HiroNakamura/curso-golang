@@ -10,6 +10,67 @@ func main() {
 	testA()
 	testB()
 	testC()
+	testD()
+	testE()
+	testF()
+	testG()
+	testH()
+}
+
+func testH() {
+	fmt.Println("\tSplit,ToLower, ToUpper, Title y ToTitle")
+	fmt.Printf("%q\n", strings.Split("Alef,Bet, Gimmel", ","))
+	titulo := strings.ToTitle("la gata del cuarto 109")
+	fmt.Println(titulo)
+	nombre := "FERNANDO"
+	fmt.Println(strings.ToLower(nombre))
+	cadena := "aldebaran"
+	fmt.Println(strings.ToUpper(cadena))
+	libro := "odisea en el mundo de aldebaran."
+	fmt.Println(strings.Title(libro))
+}
+
+func testF() {
+	fmt.Println("\tFields, Join, Repeat, Replace y ReplaceAll")
+	fmt.Printf("Campos: %q\n", strings.Fields("w q r 4 5 7"))
+	nombres := []string{"Ana", "Maria", "Jose", "Raul", "Georgina"}
+	fmt.Println(strings.Join(nombres, "/"))
+	palabra := "ba"
+	fmt.Println(palabra + strings.Repeat("na", 2))
+	word := strings.Replace("na na na", "k", "ky", 2)
+	fmt.Println(word)
+	fmt.Println(strings.ReplaceAll("La gata malbaragata", "gata", "vaca"))
+
+}
+
+func testG() {
+	fmt.Println("\tIndex e IndexAny")
+	if strings.Index("chicken", "ken") == 4 {
+		fmt.Println("Correcto")
+	}
+	if strings.IndexAny("Chicken", "aeiouy") == 2 {
+		fmt.Println("Correcto")
+	}
+}
+
+func testE() {
+	fmt.Println("\tEqualFold")
+	if strings.EqualFold("Alfa", "alfa") == true {
+		fmt.Println("Verdadero")
+	}
+	if strings.EqualFold("golang", "Golang") == true {
+		fmt.Println("Verdadero")
+	}
+}
+
+func testD() {
+	fmt.Println("\tCount")
+	if strings.Count("Fernando", "e") == 1 {
+		fmt.Println("La letra se encuentra 1 vez")
+	}
+	if strings.Count("Ferrocarrilero", "r") == 5 {
+		fmt.Println("La letra r se encuentra 5 veces")
+	}
 }
 
 func testC() {
