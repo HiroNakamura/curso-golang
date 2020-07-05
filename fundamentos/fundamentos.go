@@ -7,6 +7,11 @@ import (
 	"os"
 )
 
+const (
+	MAXIMUM = 1000
+	RUTA    = "C:\\Directorio"
+)
+
 func main() {
 	testA()
 	testB()
@@ -16,6 +21,12 @@ func main() {
 	testF()
 	testG()
 	testH()
+}
+
+func testI() {
+	funciones.Imprime("\tConstantes")
+	fmt.Printf("MAXIMUM: %d\n", MAXIMUM)
+	fmt.Printf("RUTA: %s\n", RUTA)
 }
 
 var entero1 int32
