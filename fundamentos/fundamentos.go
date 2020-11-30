@@ -26,8 +26,20 @@ func testJ() {
 	fmt.Println("Tasa: ", tasa)
 	fmt.Println("Periodo: ", periodo)
 	futuro = getFuturo(presente, tasa, periodo)
-
 	fmt.Println("Futuro: ", futuro)
+	fmt.Println("***************************************")
+	presentes := [3]float64{100.21, 202.32, 380.02}
+	for i := 1; i < 3; i++ {
+		fmt.Println("Periodo: ", i)
+		for j := 0; j < len(presentes); j++ {
+			p := float64(i)
+			fmt.Println("\tPresente: ", presentes[j])
+			fmt.Println("\tTasa: ", tasa)
+			fmt.Println("\tPeriodo: ", i)
+			fmt.Println("\tFuturo: ", getFuturo(presentes[j], tasa, p))
+
+		}
+	}
 }
 
 func main() {
