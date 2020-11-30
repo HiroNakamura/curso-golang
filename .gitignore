@@ -1,1 +1,6 @@
 *.exe
+# Ignorar esto
+.git
+
+# No ignorar esto
+!.gitignore
