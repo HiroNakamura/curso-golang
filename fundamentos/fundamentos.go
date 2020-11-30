@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"funciones"
+	"math"
 	"os"
 )
 
@@ -11,6 +12,22 @@ const (
 	MAXIMUM = 1000
 	RUTA    = "C:\\Directorio"
 )
+
+func getFuturo(presente, tasa float64, periodo float64) float64 {
+	return presente * math.Pow(tasa, periodo)
+}
+
+func testJ() {
+	var presente, tasa, futuro, periodo float64
+	presente = 120.0
+	tasa = 23.0 / 100.0
+	periodo = 2.0
+	fmt.Println("Presente: ", presente)
+	fmt.Println("Tasa: ", tasa)
+	fmt.Println("Periodo: ", periodo)
+	futuro = getFuturo(presente, tasa, periodo)
+	fmt.Println("Futuro: ", futuro)
+}
 
 func main() {
 	testA()
@@ -21,6 +38,8 @@ func main() {
 	testF()
 	testG()
 	testH()
+	testI()
+	testJ()
 }
 
 func testI() {
