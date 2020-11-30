@@ -14,7 +14,7 @@ const (
 )
 
 func getFuturo(presente, tasa float64, periodo float64) float64 {
-	return presente * math.Pow(tasa, periodo)
+	return presente + (presente * math.Pow(tasa, periodo))
 }
 
 func testJ() {
@@ -26,6 +26,7 @@ func testJ() {
 	fmt.Println("Tasa: ", tasa)
 	fmt.Println("Periodo: ", periodo)
 	futuro = getFuturo(presente, tasa, periodo)
+
 	fmt.Println("Futuro: ", futuro)
 }
 
