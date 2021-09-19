@@ -23,8 +23,6 @@ func main(){
 
 ```
 
-
-
 Compilamos:
 ```bash
 $ go build programa.go
@@ -35,6 +33,20 @@ Ejecutamos:
 $ programa.exe
 ```
 
+**Compilar y ejecutar**
+```bash
+$ go run programa.go
+```
+
+**Dar formato al programa**
+```bash
+$ go fmt programa.go
+```
+
+
 Links:
 * [Sitio oficial de Golang](https://golang.org/)
 * [Golang by Example](https://gobyexample.com/)
+* [https://github.com/politrons/LetsGO](https://github.com/politrons/LetsGO)
+
+
